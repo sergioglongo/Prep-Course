@@ -181,10 +181,10 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  tabla6 = [];
+  tabladel6 = [];
   for(let i=0;i<=10;i++)
-    tabla6[i]=i*6;
-  return tabla6;
+    tabladel6[i]=i*6;
+  return tabladel6;
 }
 
 function tieneTresDigitos(numero){
