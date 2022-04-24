@@ -41,19 +41,19 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y-x;
+  return x-y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  
+  return x*y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  Return x/y;
+  return x/y;
 }
 
 function sonIguales(x, y) {
@@ -85,7 +85,10 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num > 50)
+    return true;
+  else
+    return false;
 }
 
 function obtenerResto(x, y) {
@@ -130,19 +133,22 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num);
+  redondeado = Math.round(num);
+  return redondeado;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.floor(num);
+  redondeado = Math.ceil(num);
+  return redondeado;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-    return Math.round;
+  decimal =  Math.random();
+  return decimal;
 }
 
 function esPositivo(numero) {
@@ -157,7 +163,7 @@ function esPositivo(numero) {
    if (numero ===0)
      return false;
    else
-     return "es negativo";
+     return "Es negativo";
   }
 }
 
@@ -203,7 +209,8 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  return base* altura;
+  area = base * altura /2;
+  return area;
 }
 
 
@@ -222,10 +229,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' || letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U')
-    return true;
+  if (letra.length >= 1)
+    if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' || letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U')
+      return "Es vocal";
+    else
+      return "Dato incorrecto";
   else
-    return false;
+    return "Dato incorrecto";
 }
 
 
