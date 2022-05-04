@@ -49,7 +49,25 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
-}
+ 
+  let mayuscula ="";
+  let palabraMayuscula="";
+  let palabraMinuscula="";
+  let resultado ="";
+for(let i=0;i< s.length;i++)
+  {
+      mayuscula =  s[i].toUpperCase();
+      if (s[i] === mayuscula)
+      {
+          palabraMayuscula += s[i];
+      }
+      else
+      {
+          palabraMinuscula += s[i];
+      }
+  }
+  return resultado = palabraMayuscula + palabraMinuscula;
+}capToFront("HoLaS");
 
 
 function asAmirror(str) {
